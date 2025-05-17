@@ -67,5 +67,11 @@ export enum CompteComptable {
   _7914000000 = 'TRANSFERT CHARGES 64',
   _7680000000 = 'AUTRES PRODUITS FINA',
   _4110000000 = 'CLIENTS',
-  _7413000000 = 'SUBV.INTERNE FONCTIO'
+  _7413000000 = 'SUBV.INTERNE FONCTIO',
+  _TPE_CLUB = 'TPE CLUB'
+}
+
+// Interface pour stocker les associations libellé -> compte comptable
+export interface LibelleAccountMapping {
+  [key: string]: CompteComptable;
 }
